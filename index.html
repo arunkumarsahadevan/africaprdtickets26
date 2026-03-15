@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Helpdesk Tickets</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Helpdesk Tickets</h1>
+    <div class="toolbar">
+      <button id="reload">Reload</button>
+      <label class="small"><input type="checkbox" id="autoRefresh" checked> Auto‑refresh (30s)</label>
+      <span id="status" class="muted"></span>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Tickets</h2>
+      <div class="table-wrap">
+        <table id="ticketsTable">
+          <thead>
+            <tr>
+              <th>Ticket ID</th>
+              <th>Customer</th>
+              <th>Project</th>
+              <th>Status</th>
+              <th>Severity</th>
+              <th>Subject</th>
+              <th>Reported</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
